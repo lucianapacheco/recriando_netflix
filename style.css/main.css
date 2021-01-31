@@ -1,0 +1,108 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* base */
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;/*mesma coisa que display:flex*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/* filme princpal */
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/capa.jpg');
+
+    height: 500px; /*tamanho da img */
+    background-size: cover; /*para a img ficar em foto espaço */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* sempre segue a direção do flex-direction */
+    align-items: flex-start;  /*deixa o elemento mais para esquerda */
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(63, 63, 63, 0.5) ;
+    color: white;
+    border: none;
+
+    padding: 15px 30px;
+    margin-right: 12px;
+
+    cursor: pointer; /*para mostrar que é clicavel*/
+    transition: .3s ease all; /*animação no botão*/
+}
+
+.botao:hover{ /*quando o cursor passar por cima */
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 80%;
+}
+
+.box-filme{
+    height: 20%;
+    width: 20%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
